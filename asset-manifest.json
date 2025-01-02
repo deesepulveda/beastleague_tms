@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.fb02a468.css",
+    "main.js": "/react-gh-pages/static/js/main.5585d86d.js",
+    "static/js/952.cc79992b.chunk.js": "/react-gh-pages/static/js/952.cc79992b.chunk.js",
+    "static/media/BG_SkullLoog_Frame_Resize.png": "/react-gh-pages/static/media/BG_SkullLoog_Frame_Resize.ebc836c3f0f5fcd04a3d.png",
+    "static/media/WhimsyIntermodalWhite-Clearbkgrd.png": "/react-gh-pages/static/media/WhimsyIntermodalWhite-Clearbkgrd.00991b1704867c70b89d.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.fb02a468.css.map": "/react-gh-pages/static/css/main.fb02a468.css.map",
+    "main.5585d86d.js.map": "/react-gh-pages/static/js/main.5585d86d.js.map",
+    "952.cc79992b.chunk.js.map": "/react-gh-pages/static/js/952.cc79992b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb02a468.css",
+    "static/js/main.5585d86d.js"
+  ]
+}

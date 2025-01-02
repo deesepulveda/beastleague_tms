@@ -5,6 +5,7 @@ import "../../global/SortButtons.css";
 import { dispButtons } from "../../global/dataButtonsArrays";
 import SortButtons from "../../global/SortButtons";
 import DispatchTimeLine from "../../global/DispatchTimeLine";
+import SideTaskView from "../../global/SideTaskView";
 
 const Dispatch = () => {
   const [showData, setShowData] = useState([]);
@@ -34,6 +35,7 @@ const Dispatch = () => {
           </SortButtons>
         ))}
       </div>
+      <SideTaskView />
       {showData.map((data) => (
         <DispatchTimeLine key={data.id} data={data} />
       ))}

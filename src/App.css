@@ -1,0 +1,25 @@
+/* MEDIA QUERIES */
+
+.App {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 1920px) {
+  .App {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(130deg, #ac064e, #0e033f, #04608b);
+  }
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

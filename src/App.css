@@ -11,7 +11,43 @@
     display: block;
     width: 100vw;
     height: 100vh;
+  }
+
+  .App::before {
+    content: "";
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-image: url("./assets/BG_SkullLoog_Frame_Resize.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    filter: blur(1.25rem);
+    -webkit-filter: blur(1.25rem);
+    opacity: 0.25;
+  }
+
+  .App::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     background: linear-gradient(130deg, #ac064e, #0e033f, #04608b);
+    z-index: -1;
   }
 }
 

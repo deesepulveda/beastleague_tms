@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/beastleague_tms/static/css/main.62e9909e.css",
-    "main.js": "/beastleague_tms/static/js/main.c530401f.js",
+    "main.css": "/beastleague_tms/static/css/main.5b125cdc.css",
+    "main.js": "/beastleague_tms/static/js/main.521ba5bd.js",
+    "static/js/952.cc79992b.chunk.js": "/beastleague_tms/static/js/952.cc79992b.chunk.js",
     "static/media/BG_SkullLoog_Frame_Resize.png": "/beastleague_tms/static/media/BG_SkullLoog_Frame_Resize.ebc836c3f0f5fcd04a3d.png",
     "static/media/WhimsyIntermodalWhite-Clearbkgrd.png": "/beastleague_tms/static/media/WhimsyIntermodalWhite-Clearbkgrd.00991b1704867c70b89d.png",
     "index.html": "/beastleague_tms/index.html",
-    "main.62e9909e.css.map": "/beastleague_tms/static/css/main.62e9909e.css.map",
-    "main.c530401f.js.map": "/beastleague_tms/static/js/main.c530401f.js.map"
+    "main.5b125cdc.css.map": "/beastleague_tms/static/css/main.5b125cdc.css.map",
+    "main.521ba5bd.js.map": "/beastleague_tms/static/js/main.521ba5bd.js.map",
+    "952.cc79992b.chunk.js.map": "/beastleague_tms/static/js/952.cc79992b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e9909e.css",
-    "static/js/main.c530401f.js"
+    "static/css/main.5b125cdc.css",
+    "static/js/main.521ba5bd.js"
   ]
 }

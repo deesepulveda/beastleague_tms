@@ -13,7 +13,9 @@ const DataEntry = ({ activeComponent }) => {
       }>
       <div className="sortButtonsContainer">
         {dataButtons.map((btns) => (
-          <SortButtons btns={btns}>{btns.tab}</SortButtons>
+          <SortButtons key={btns.id} btns={btns}>
+            {btns.tab}
+          </SortButtons>
         ))}
       </div>
     </div>

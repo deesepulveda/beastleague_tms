@@ -2,6 +2,7 @@ import React from "react";
 import { apptButtons } from "../../global/dataButtonsArrays";
 import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
+import SideTaskView from "../../global/SideTaskView";
 
 const Appointments = ({ activeComponent }) => {
   return (
@@ -13,9 +14,12 @@ const Appointments = ({ activeComponent }) => {
       }>
       <div className="sortButtonsContainer">
         {apptButtons.map((btns) => (
-          <SortButtons btns={btns}>{btns.tab}</SortButtons>
+          <SortButtons key={btns.id} btns={btns}>
+            {btns.tab}
+          </SortButtons>
         ))}
       </div>
+      <SideTaskView />
     </div>
   );
 };

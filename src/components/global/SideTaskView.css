@@ -2,9 +2,8 @@
   width: 0;
   height: 0;
   position: absolute;
-  top: 4rem;
+  top: 5rem;
   right: 0;
-  /* background-color: #000; */
   z-index: 50;
 }
 
@@ -17,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: inherit;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: 0.35s ease-in-out;
   -webkit-transition: 0.35s ease-in-out;
@@ -34,10 +33,10 @@
   right: 0;
   background-color: #000000;
   opacity: 0.96;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /*InternetExplorer10+*/
+  scrollbar-width: none; /*Firefox*/
   transition: 0.35s ease-in-out;
   -webkit-transition: 0.35s ease-in-out;
   -moz-transition: 0.35s ease-in-out;
@@ -46,10 +45,15 @@
 }
 
 .sideTaskViewContainer
+  > .sideTaskViewContainer_menu::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.sideTaskViewContainer
   > .sideTaskViewContainer_menu
   > .sideTaskViewContainer_miniView {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   margin-top: 2rem;
   border-bottom: 0.1rem dotted #fff;
 }

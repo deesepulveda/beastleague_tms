@@ -6,7 +6,7 @@ const Dashboard = ({ activeComponent }) => {
     <div
       className={
         activeComponent
-          ? "pageContainer_components componentSlideIn"
+          ? "pageContainer_components dashboardContainer componentSlideIn"
           : "pageContainer_components"
       }>
       Dashboard

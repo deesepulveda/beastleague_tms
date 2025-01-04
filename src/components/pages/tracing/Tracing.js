@@ -2,6 +2,7 @@ import React from "react";
 import { traceButtons } from "../../global/dataButtonsArrays";
 import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
+import SideTaskView from "../../global/SideTaskView";
 
 const Tracing = ({ activeComponent }) => {
   return (
@@ -13,9 +14,12 @@ const Tracing = ({ activeComponent }) => {
       }>
       <div className="sortButtonsContainer">
         {traceButtons.map((btns) => (
-          <SortButtons btns={btns}>{btns.tab}</SortButtons>
+          <SortButtons key={btns.id} btns={btns}>
+            {btns.tab}
+          </SortButtons>
         ))}
       </div>
+      <SideTaskView />
     </div>
   );
 };

@@ -9,7 +9,63 @@ const Dashboard = ({ activeComponent }) => {
           ? "pageContainer_components dashboardContainer componentSlideIn"
           : "pageContainer_components"
       }>
-      Dashboard
+      <div className="dashboardContainer_main">
+        <div className="dashboardContainer_main_topContainer">
+          <div className="dashboardContainer_main_miniBox">
+            <p className="dashboard_title">sched appts</p>
+            <div className="dashboard_colored_color1"></div>
+          </div>
+          <div className="dashboardContainer_main_miniBox">
+            <p className="dashboard_title">unassigned</p>
+            <div className="dashboard_colored_color2"></div>
+          </div>
+          <div className="dashboardContainer_main_miniBox">
+            <p className="dashboard_title">on time pct-%</p>
+            <div className="dashboard_colored_color3"></div>
+          </div>
+          <div className="dashboardContainer_main_miniBox">
+            <p className="dashboard_title">fuel surcharge</p>
+            <div className="dashboard_colored_color4"></div>
+          </div>
+        </div>
+        <div className="dashboardContainer_main_middleContainer">
+          <p className="dashboard_title">avg hrs at rails</p>
+          <div className="dashboardContainer_main_middleContainer_railBox">
+            <div className="railBox_rails">
+              <div className="rail_name">lpc</div>
+              <div className="rail_hours">2.2</div>
+            </div>
+            <div className="railBox_rails">
+              <div className="rail_name">g4</div>
+              <div className="rail_hours">4.7</div>
+            </div>
+            <div className="railBox_rails">
+              <div className="rail_name">cn</div>
+              <div className="rail_hours">1.5</div>
+            </div>
+            <div className="railBox_rails">
+              <div className="rail_name">csx</div>
+              <div className="rail_hours">.57</div>
+            </div>
+            <div className="railBox_rails">
+              <div className="rail_name">ns</div>
+              <div className="rail_hours">3.7</div>
+            </div>
+            <div className="railBox_rails">
+              <div className="rail_name">cp</div>
+              <div className="rail_hours">.45</div>
+            </div>
+          </div>
+        </div>
+        <div className="dashboardContainer_main_bottomContainer">
+          <p className="dashboard_title">productivity</p>
+        </div>
+      </div>
+      <div className="dashboardContainer_side">
+        <div className="dashboardContainer_side_box">
+          <p className="dashboard_title">daily board</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,247 @@
+/************************************/
+/* Dashboard Component */
+/************************************/
+
 .dashboardContainer {
-  border: 1px solid red;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/************************************/
+/* Dashboard Main Component */
+/************************************/
+
+.dashboardContainer > .dashboardContainer_main {
+  width: 80%;
+  height: 100%;
+  padding: 5rem 1.5rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px dotted green; */
+}
+
+/* Top Data Container */
+
+.dashboardContainer
+  > .dashboardContainer_main
+  > .dashboardContainer_main_topContainer {
+  width: 100%;
+  height: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboardContainer
+  > .dashboardContainer_main
+  > .dashboardContainer_main_topContainer
+  > .dashboardContainer_main_miniBox {
+  width: 32rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000bb;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+/* Middle Data Container */
+
+.dashboardContainer
+  > .dashboardContainer_main
+  > .dashboardContainer_main_middleContainer {
+  width: 100%;
+  height: 30.5%;
+  background-color: #000000bb;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+/* Bottom Data Container */
+
+.dashboardContainer
+  > .dashboardContainer_main
+  > .dashboardContainer_main_bottomContainer {
+  width: 100%;
+  height: 30.5%;
+  background-color: #000000bb;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+/************************************/
+/* Dashboard Side Component */
+/************************************/
+
+.dashboardContainer > .dashboardContainer_side {
+  width: 19.25%;
+  height: 100%;
+  padding: 5rem 5rem 5rem 1.5rem;
+  /* border: 1px dotted green; */
+}
+
+.dashboardContainer
+  > .dashboardContainer_side
+  > .dashboardContainer_side_box {
+  width: 100%;
+  height: 100%;
+  background-color: #000000bb;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+/************************************/
+/* Dashboard Children Styling */
+/************************************/
+
+.dashboard_title {
+  width: 100%;
+  height: 4rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+  border-radius: 1rem 1rem 0rem 0rem;
+  -webkit-border-radius: 1rem 1rem 0rem 0rem;
+  -moz-border-radius: 1rem 1rem 0rem 0rem;
+  -ms-border-radius: 1rem 1rem 0rem 0rem;
+  -o-border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.dashboardContainer_main_middleContainer_railBox {
+  width: 100%;
+  height: calc(100% - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.railBox_rails {
+  width: calc(100% / 6);
+  height: 100%;
+  padding: 1rem 0 0 2rem;
+  position: relative;
+}
+
+.railBox_rails:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-right: 0.18rem dotted rgb(255, 255, 255);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.railBox_rails > .rail_name {
+  height: 3rem;
+  text-align: start;
+}
+
+.railBox_rails > .rail_hours {
+  height: calc(100% - 4rem);
+  padding-left: 1rem;
+  font-size: 6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.railBox_rails > .rail_hours::before {
+  content: "";
+  width: 1.5rem;
+  height: 55%;
+  position: absolute;
+  bottom: 15%;
+  right: 25%;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 238, 255),
+    rgba(0, 238, 255, 0)
+  );
+}
+
+.railBox_rails > .rail_hours::after {
+  content: "";
+  width: 1.5rem;
+  height: 75%;
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  background: linear-gradient(
+    to bottom,
+    rgb(28, 255, 3),
+    rgba(0, 238, 255, 0)
+  );
+}
+
+/* Dashboard Mini-Boxes Colors */
+
+.dashboard_colored_color1,
+.dashboard_colored_color2,
+.dashboard_colored_color3,
+.dashboard_colored_color4 {
+  width: 100%;
+  height: 8rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  -webkit-border-radius: 0rem 0rem 1rem 1rem;
+  -moz-border-radius: 0rem 0rem 1rem 1rem;
+  -ms-border-radius: 0rem 0rem 1rem 1rem;
+  -o-border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.dashboard_colored_color1 {
+  background: linear-gradient(
+    to right,
+    rgb(0, 238, 255),
+    rgba(0, 238, 255, 0)
+  );
+}
+
+.dashboard_colored_color2 {
+  background: linear-gradient(
+    to right,
+    rgb(200, 222, 3),
+    rgba(255, 196, 0, 0)
+  );
+}
+
+.dashboard_colored_color3 {
+  background: linear-gradient(
+    to right,
+    rgb(255, 0, 238),
+    rgba(0, 238, 255, 0)
+  );
+}
+
+.dashboard_colored_color4 {
+  background: linear-gradient(
+    to right,
+    rgb(28, 255, 3),
+    rgba(0, 238, 255, 0)
+  );
 }

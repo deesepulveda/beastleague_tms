@@ -7,10 +7,10 @@ import supabase from "../../../config/supabaseClient";
 import DispatchTimeLine from "../../global/DispatchTimeLine";
 
 const Dispatch = ({ activeComponent }) => {
-  const [showData, setShowData] = useState([]);
+  const [showDispData, setShowDispData] = useState([]);
   const [isDataLoading, setIsDataLoading] = useState(true);
 
-  const fetchDispatchData = async () => {
+  const fetchDataDisp = async () => {
     const { data, error } = await supabase
       .from("dispatch")
       .select("*");
@@ -19,18 +19,19 @@ const Dispatch = ({ activeComponent }) => {
 
     if (data) {
       console.log("There is Data!");
+
+      setShowDispData(
+        data.filter((datas) => {
+          return datas.appointment_date !== null;
+        })
+      );
+
       setIsDataLoading(false);
     }
-
-    setShowData(
-      data.filter((datas) => {
-        return datas.appointment_date !== null;
-      })
-    );
   };
 
   useEffect(() => {
-    fetchDispatchData();
+    fetchDataDisp();
   }, []);
 
   return (
@@ -48,10 +49,10 @@ const Dispatch = ({ activeComponent }) => {
         ))}
       </div>
       {isDataLoading ? (
-        <div>"Loading..."</div>
+        <div>Loading...</div>
       ) : (
         <div>
-          {showData.map((data, i) => (
+          {showDispData.map((data, i) => (
             <DispatchTimeLine key={i} data={data} />
           ))}
         </div>

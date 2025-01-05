@@ -13,19 +13,27 @@ const Dashboard = ({ activeComponent }) => {
         <div className="dashboardContainer_main_topContainer">
           <div className="dashboardContainer_main_miniBox">
             <p className="dashboard_title">sched appts</p>
-            <div className="dashboard_colored_color1"></div>
+            <div className="dashboard_colored_color1 dashboard_colored">
+              115
+            </div>
           </div>
           <div className="dashboardContainer_main_miniBox">
             <p className="dashboard_title">unassigned</p>
-            <div className="dashboard_colored_color2"></div>
+            <div className="dashboard_colored_color2 dashboard_colored">
+              10
+            </div>
           </div>
           <div className="dashboardContainer_main_miniBox">
             <p className="dashboard_title">on time pct-%</p>
-            <div className="dashboard_colored_color3"></div>
+            <div className="dashboard_colored_color3 dashboard_colored">
+              93.5%
+            </div>
           </div>
           <div className="dashboardContainer_main_miniBox">
             <p className="dashboard_title">fuel surcharge</p>
-            <div className="dashboard_colored_color4"></div>
+            <div className="dashboard_colored_color4 dashboard_colored">
+              32.5%
+            </div>
           </div>
         </div>
         <div className="dashboardContainer_main_middleContainer">
@@ -64,6 +72,16 @@ const Dashboard = ({ activeComponent }) => {
       <div className="dashboardContainer_side">
         <div className="dashboardContainer_side_box">
           <p className="dashboard_title">daily board</p>
+          <ul>
+            <li>Happy Birthday John!</li>
+            <li>B-Day Party 1400</li>
+            <li>Drivers turn in Sheets</li>
+            <li>Meeting 1500</li>
+            <li style={{ color: "yellow" }}>
+              Last day Insurance enroll
+            </li>
+            <li>system update 1900</li>
+          </ul>
         </div>
       </div>
     </div>

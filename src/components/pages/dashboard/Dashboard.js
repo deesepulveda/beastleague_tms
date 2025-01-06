@@ -67,6 +67,22 @@ const Dashboard = ({ activeComponent }) => {
         </div>
         <div className="dashboardContainer_main_bottomContainer">
           <p className="dashboard_title">productivity</p>
+          <div className="dashboard_bottomcontainer_charts">
+            <div className="dashboard_graph">
+              <img
+                src={require("../../../assets/graph_text.png")}
+                alt=""
+              />
+            </div>
+            <div className="dashboard_chartBar">
+              <div className="dashboard_chartBar_pie">
+                <img
+                  src={require("../../../assets/CircleGraph_One.png")}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="dashboardContainer_side">

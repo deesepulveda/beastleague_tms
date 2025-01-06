@@ -34,7 +34,9 @@ const DataEntry = ({ activeComponent }) => {
           </div>
           <form className="dataEntryFormSection_form"></form>
         </div>
-        <div className="dataEntryFormSection_sideBox"></div>
+        <div className="dataEntryFormSection_sideBox">
+          <p className="sideBox_title">Created Dispatches</p>
+        </div>
       </div>
     </div>
   );

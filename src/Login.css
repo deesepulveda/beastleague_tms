@@ -10,21 +10,48 @@
   z-index: 50;
 }
 
-.loginContainer::after {
+.loginContainer::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  /* opacity: 0.8; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-image: url("../src/assets/Whim_Logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loginContainer > .overlay {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.loginContainer > .overlay > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .loginContainer > .loginContainer_modal {
   width: 35rem;
   height: 45rem;
+  position: relative;
   color: #fff;
   font-size: 1.4rem;
   display: flex;
@@ -37,6 +64,29 @@
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  z-index: 5;
+}
+
+.loginContainer > .loginContainer_modal::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: #000;
+  opacity: 0.95;
+  z-index: -1;
 }
 
 .loginContainer > .loginContainer_modal > p {
@@ -54,4 +104,14 @@
 
 .removeLoginModal {
   display: none;
+}
+
+@keyframes breathingStyle {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 100%;
+  }
 }

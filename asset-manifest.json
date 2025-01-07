@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/beastleague_tms/static/css/main.76404e12.css",
-    "main.js": "/beastleague_tms/static/js/main.e37d36eb.js",
+    "main.css": "/beastleague_tms/static/css/main.ec6e5c44.css",
+    "main.js": "/beastleague_tms/static/js/main.9e77bd09.js",
     "static/js/952.cc79992b.chunk.js": "/beastleague_tms/static/js/952.cc79992b.chunk.js",
-    "static/media/Screen_Recording_20250106_032416_YouTube 2.mp4": "/beastleague_tms/static/media/Screen_Recording_20250106_032416_YouTube 2.106f09e0bf8891c13ae1.mp4",
+    "static/media/Screen_Recording_Flames.mp4": "/beastleague_tms/static/media/Screen_Recording_Flames.106f09e0bf8891c13ae1.mp4",
     "static/media/BG_SkullLoog_Frame_Resize.png": "/beastleague_tms/static/media/BG_SkullLoog_Frame_Resize.ebc836c3f0f5fcd04a3d.png",
     "static/media/Whim_Logo.png": "/beastleague_tms/static/media/Whim_Logo.2d9bf46b36b4818e7ffa.png",
     "static/media/WhimsyIntermodalWhite-Clearbkgrd.png": "/beastleague_tms/static/media/WhimsyIntermodalWhite-Clearbkgrd.00991b1704867c70b89d.png",
     "static/media/graph_text.png": "/beastleague_tms/static/media/graph_text.fa2ab0b18a4a0e37a3ed.png",
     "index.html": "/beastleague_tms/index.html",
-    "main.76404e12.css.map": "/beastleague_tms/static/css/main.76404e12.css.map",
-    "main.e37d36eb.js.map": "/beastleague_tms/static/js/main.e37d36eb.js.map",
+    "main.ec6e5c44.css.map": "/beastleague_tms/static/css/main.ec6e5c44.css.map",
+    "main.9e77bd09.js.map": "/beastleague_tms/static/js/main.9e77bd09.js.map",
     "952.cc79992b.chunk.js.map": "/beastleague_tms/static/js/952.cc79992b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76404e12.css",
-    "static/js/main.e37d36eb.js"
+    "static/css/main.ec6e5c44.css",
+    "static/js/main.9e77bd09.js"
   ]
 }

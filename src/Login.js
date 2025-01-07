@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.css";
-import videoSource from "../src/assets/Screen_Recording_20250106_032416_YouTube 2.mp4";
+import videoSource from "../src/assets/Screen_Recording_Flames.mp4";
 
 const Login = ({ isLoggedIn, setIsLoggedIn }) => {
   const handleLogin = () => {

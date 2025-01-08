@@ -1,0 +1,10 @@
+.topHeaderContainer {
+  width: 100%;
+  max-width: 192rem;
+  height: 5rem;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  z-index: 50;
+  /* border: 1px dotted rgb(0, 136, 255); */
+}

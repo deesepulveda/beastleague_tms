@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { dispButtons } from "../../global/dataButtonsArrays";
-import SortButtons from "../../global/SortButtons";
+// import { dispButtons } from "../../global/dataButtonsArrays";
+// import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
-import SideTaskView from "../../global/SideTaskView";
+// import SideTaskView from "../../global/SideTaskView";
 import supabase from "../../../config/supabaseClient";
+// import TopHeader from "../../../TopHeader";
 import DispatchTimeLine from "../../global/DispatchTimeLine";
 
 const Dispatch = ({ activeComponent }) => {
@@ -41,13 +42,6 @@ const Dispatch = ({ activeComponent }) => {
           ? "pageContainer_components componentSlideIn"
           : "pageContainer_components"
       }>
-      <div className="sortButtonsContainer">
-        {dispButtons.map((btns) => (
-          <SortButtons key={btns.id} btns={btns}>
-            {btns.tab}
-          </SortButtons>
-        ))}
-      </div>
       {isDataLoading ? (
         <div>Loading...</div>
       ) : (
@@ -57,7 +51,6 @@ const Dispatch = ({ activeComponent }) => {
           ))}
         </div>
       )}
-      <SideTaskView />
     </div>
   );
 };

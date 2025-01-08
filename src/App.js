@@ -3,6 +3,7 @@ import Pages from "./components/Pages";
 import MainNav from "./components/MainNav";
 import Login from "./Login";
 import { useState } from "react";
+import TopHeader from "./TopHeader";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("dash");
@@ -15,6 +16,12 @@ function App() {
   return (
     <div className="App">
       <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      {isLoggedIn && (
+        <TopHeader
+          activeComponent={activeComponent}
+          setActiveComponent={setActiveComponent}
+        />
+      )}
       {isLoggedIn && (
         <Pages
           activeComponent={activeComponent}

@@ -1,7 +1,7 @@
 .pageContainer {
   width: 100vw;
   max-width: 192rem;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 10rem);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -16,7 +16,7 @@
 .pageContainer_components {
   width: 100%;
   height: 100%;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none; /*InternetExplorer10+*/
@@ -32,22 +32,12 @@
   display: none; /* Safari and Chrome */
 }
 
-.pageContainer_components > .sortButtonsContainer {
-  width: 100%;
-  height: 4rem;
-  margin: 0.5rem 0rem 1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* border: 0.1rem dotted #fff; */
-}
-
 /* Conditional Styling */
 
 .componentSlideIn {
-  animation-duration: 800ms;
+  animation-duration: 900ms;
   animation-name: slideIn;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 
@@ -61,11 +51,11 @@
   }
 
   60% {
-    transform: translateX(5%);
-    -webkit-transform: translateX(5%);
-    -moz-transform: translateX(5%);
-    -ms-transform: translateX(5%);
-    -o-transform: translateX(5%);
+    transform: translateX(3%);
+    -webkit-transform: translateX(3%);
+    -moz-transform: translateX(3%);
+    -ms-transform: translateX(3%);
+    -o-transform: translateX(3%);
   }
 
   80% {
@@ -84,3 +74,21 @@
     -o-transform: translateX(0%);
   }
 }
+
+/* @keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+} */

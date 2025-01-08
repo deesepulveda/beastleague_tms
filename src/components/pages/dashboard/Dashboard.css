@@ -101,7 +101,7 @@
   > .dashboard_bottomcontainer_charts
   > .dashboard_graph {
   width: 80%;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,8 +112,8 @@
   > .dashboard_bottomcontainer_charts
   > .dashboard_graph
   > img {
-  width: 85%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 

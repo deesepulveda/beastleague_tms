@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { apptButtons } from "../../global/dataButtonsArrays";
-import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
-import SideTaskView from "../../global/SideTaskView";
 import supabase from "../../../config/supabaseClient";
 import DispatchTimeLine from "../../global/DispatchTimeLine";
 
@@ -41,13 +38,6 @@ const Appointments = ({ activeComponent }) => {
           ? "pageContainer_components componentSlideIn"
           : "pageContainer_components"
       }>
-      <div className="sortButtonsContainer">
-        {apptButtons.map((btns) => (
-          <SortButtons key={btns.id} btns={btns}>
-            {btns.tab}
-          </SortButtons>
-        ))}
-      </div>
       {isDataLoading ? (
         <div>Loading...</div>
       ) : (
@@ -57,7 +47,6 @@ const Appointments = ({ activeComponent }) => {
           ))}
         </div>
       )}
-      <SideTaskView />
     </div>
   );
 };

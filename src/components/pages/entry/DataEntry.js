@@ -1,5 +1,4 @@
 import React from "react";
-import { dataButtons } from "../../global/dataButtonsArrays";
 import { templateButtons } from "../../global/dataButtonsArrays";
 import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
@@ -13,13 +12,6 @@ const DataEntry = ({ activeComponent }) => {
           ? "pageContainer_components dataEntryContainer componentSlideIn"
           : "pageContainer_components"
       }>
-      <div className="sortButtonsContainer">
-        {dataButtons.map((btns) => (
-          <SortButtons key={btns.id} btns={btns}>
-            {btns.tab}
-          </SortButtons>
-        ))}
-      </div>
       <div className="dataEntryFormSection">
         <div className="dataEntryFormSection_mainBox">
           <div className="dataEntryFormSection_temp">
@@ -36,6 +28,32 @@ const DataEntry = ({ activeComponent }) => {
         </div>
         <div className="dataEntryFormSection_sideBox">
           <p className="sideBox_title">Created Dispatches</p>
+          <ul>
+            <li>
+              <span>80035-0</span> created by Jake
+            </li>
+            <li>
+              <span>80034-2</span> created by Jake
+            </li>
+            <li>
+              <span>80034-1</span> created by Dan
+            </li>
+            <li>
+              <span>80033-0</span> created by Dan
+            </li>
+            <li>
+              <span>80032-0</span> created by Jake
+            </li>
+            <li>
+              <span>80031-0</span> created by Jake
+            </li>
+            <li>
+              <span>80030-0</span> created by Wes
+            </li>
+            <li>
+              <span>80029-0</span> created by Jake
+            </li>
+          </ul>
         </div>
       </div>
     </div>

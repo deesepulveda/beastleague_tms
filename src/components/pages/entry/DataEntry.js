@@ -1,5 +1,5 @@
 import React from "react";
-import { templateButtons } from "../../global/dataButtonsArrays";
+import { templateButtons } from "../../../TopHeader";
 import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
 import "./DataEntry.css";

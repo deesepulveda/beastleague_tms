@@ -1,7 +1,34 @@
 import React, { useState } from "react";
 import "./SideTaskView.css";
 
-const SideTaskView = () => {
+const dispTaskView = [
+  { id: 1, tab: "undispatched" },
+  { id: 2, tab: "in transit to cust" },
+  { id: 3, tab: "at customer" },
+  { id: 4, tab: "at pickup rail" },
+  { id: 5, tab: "at return rail" },
+  { id: 6, tab: "at depot" },
+];
+
+const apptTaskView = [
+  { id: 1, tab: "need pu #s" },
+  { id: 2, tab: "need appointments" },
+  { id: 3, tab: "need po #s" },
+  { id: 4, tab: "email customers" },
+  { id: 5, tab: "available" },
+  { id: 6, tab: "misc" },
+];
+
+const traceTaskView = [
+  { id: 1, tab: "need pu #s" },
+  { id: 2, tab: "eta" },
+  { id: 3, tab: "need storage paid" },
+  { id: 4, tab: "last free day" },
+  { id: 5, tab: "eta" },
+  { id: 6, tab: "misc" },
+];
+
+const SideTaskView = ({ activeComponent }) => {
   const [toggleView, setToggleView] = useState(false);
 
   const handleToggleTaskView = () => {
@@ -19,34 +46,48 @@ const SideTaskView = () => {
         onClick={handleToggleTaskView}>
         Task View 🚢
       </div>
-      <div
-        className={
-          toggleView
-            ? "sideTaskViewContainer_menu openTaskView"
-            : "sideTaskViewContainer_menu closeTaskView"
-        }>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Today</p>
+      {activeComponent === "disp" && (
+        <div
+          className={
+            toggleView
+              ? "sideTaskViewContainer_menu openTaskView"
+              : "sideTaskViewContainer_menu closeTaskView"
+          }>
+          {dispTaskView.map((tabs) => (
+            <div className="sideTaskViewContainer_miniView">
+              <p>{tabs.tab}</p>
+            </div>
+          ))}
         </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Requested PU Numbers</p>
+      )}
+      {activeComponent === "appt" && (
+        <div
+          className={
+            toggleView
+              ? "sideTaskViewContainer_menu openTaskView"
+              : "sideTaskViewContainer_menu closeTaskView"
+          }>
+          {apptTaskView.map((tabs) => (
+            <div className="sideTaskViewContainer_miniView">
+              <p>{tabs.tab}</p>
+            </div>
+          ))}
         </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Updates Needed</p>
+      )}
+      {activeComponent === "trace" && (
+        <div
+          className={
+            toggleView
+              ? "sideTaskViewContainer_menu openTaskView"
+              : "sideTaskViewContainer_menu closeTaskView"
+          }>
+          {traceTaskView.map((tabs) => (
+            <div className="sideTaskViewContainer_miniView">
+              <p>{tabs.tab}</p>
+            </div>
+          ))}
         </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Trace Now</p>
-        </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Call In Appts</p>
-        </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Email Appts</p>
-        </div>
-        <div className="sideTaskViewContainer_miniView">
-          <p>Need Updates</p>
-        </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -40,7 +40,7 @@ const traceButtons = [
   { id: 7, tab: "cp", hovered: false },
 ];
 
-const templateButtons = [
+export const templateButtons = [
   { id: 1, tab: "cst drop", hovered: false },
   { id: 2, tab: "maersk xt", hovered: false },
   { id: 3, tab: "hapag mt", hovered: false },
@@ -88,9 +88,13 @@ const TopHeader = ({ activeComponent }) => {
           ))}
         </div>
       )}
-      {activeComponent !== "dash" && activeComponent !== "data" && (
-        <SideTaskView />
-      )}
+      {activeComponent !== "dash" &&
+        activeComponent !== "data" &&
+        activeComponent !== "bill" &&
+        activeComponent !== "equip" &&
+        activeComponent !== "drivers" && (
+          <SideTaskView activeComponent={activeComponent} />
+        )}
     </div>
   );
 };

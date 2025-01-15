@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beastleague_tms/static/css/main.6791d088.css",
-    "main.js": "/beastleague_tms/static/js/main.a717ac2a.js",
+    "main.css": "/beastleague_tms/static/css/main.1d700f2f.css",
+    "main.js": "/beastleague_tms/static/js/main.54cd1265.js",
     "static/js/952.cc79992b.chunk.js": "/beastleague_tms/static/js/952.cc79992b.chunk.js",
     "static/media/Screen_Recording_Flames.mp4": "/beastleague_tms/static/media/Screen_Recording_Flames.106f09e0bf8891c13ae1.mp4",
     "static/media/BG_SkullLoog_Frame_Resize.png": "/beastleague_tms/static/media/BG_SkullLoog_Frame_Resize.ebc836c3f0f5fcd04a3d.png",
@@ -9,12 +9,12 @@
     "static/media/WhimsyIntermodalWhite-Clearbkgrd.png": "/beastleague_tms/static/media/WhimsyIntermodalWhite-Clearbkgrd.00991b1704867c70b89d.png",
     "static/media/graph_text.png": "/beastleague_tms/static/media/graph_text.fa2ab0b18a4a0e37a3ed.png",
     "index.html": "/beastleague_tms/index.html",
-    "main.6791d088.css.map": "/beastleague_tms/static/css/main.6791d088.css.map",
-    "main.a717ac2a.js.map": "/beastleague_tms/static/js/main.a717ac2a.js.map",
+    "main.1d700f2f.css.map": "/beastleague_tms/static/css/main.1d700f2f.css.map",
+    "main.54cd1265.js.map": "/beastleague_tms/static/js/main.54cd1265.js.map",
     "952.cc79992b.chunk.js.map": "/beastleague_tms/static/js/952.cc79992b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6791d088.css",
-    "static/js/main.a717ac2a.js"
+    "static/css/main.1d700f2f.css",
+    "static/js/main.54cd1265.js"
   ]
 }

@@ -129,6 +129,7 @@
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_expand {
   width: 2.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -179,4 +180,59 @@
   font-weight: 600;
   background-color: rgb(137, 229, 9);
   border: none;
+}
+
+/* Expanded Linear */
+
+.dispatchTimeLineContainer_expanded {
+  width: 100%;
+  height: 3.3rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  background-color: #000000bb;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(14, 14, 14, 0.628);
+}
+
+.dispatchTimeLineContainer_expanded > div {
+  height: 100%;
+  margin: 0 0.25rem;
+  padding-left: 0.65rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dispatchTimeLineContainer_expanded > .identifier {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.dispatchTimeLineContainer_expanded
+  > .dispatchTimeLineContainer_expanded_booking {
+  width: 16rem;
+}
+
+.dispatchTimeLineContainer_expanded
+  > .dispatchTimeLineContainer_expanded_pickup {
+  width: 18rem;
+}
+
+.removeMarginBottom {
+  margin-bottom: 0;
+}
+
+.closeExpansion {
+  display: none;
 }

@@ -54,11 +54,12 @@
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_container {
   width: 17rem;
+  padding-left: 0.5rem;
   justify-content: flex-start;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_chas {
-  width: 25rem;
+  width: 23rem;
   justify-content: flex-start;
 }
 
@@ -71,14 +72,17 @@
   width: 34rem;
   padding-left: 1rem;
   justify-content: flex-start;
+  font-weight: 600;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_date {
   width: 5rem;
+  font-weight: 600;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_time {
   width: 5rem;
+  font-weight: 600;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_status {
@@ -111,8 +115,8 @@
 /************************************/
 
 .nullStyling {
-  color: #000;
-  background-color: yellow;
+  color: #fff;
+  background-color: rgb(68, 127, 166);
 }
 
 .dispatchTimeLineContainer > .identifier {

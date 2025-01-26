@@ -54,7 +54,9 @@ const SideTaskView = ({ activeComponent }) => {
               : "sideTaskViewContainer_menu closeTaskView"
           }>
           {dispTaskView.map((tabs) => (
-            <div className="sideTaskViewContainer_miniView">
+            <div
+              key={tabs.id}
+              className="sideTaskViewContainer_miniView">
               <p>{tabs.tab}</p>
             </div>
           ))}
@@ -68,7 +70,9 @@ const SideTaskView = ({ activeComponent }) => {
               : "sideTaskViewContainer_menu closeTaskView"
           }>
           {apptTaskView.map((tabs) => (
-            <div className="sideTaskViewContainer_miniView">
+            <div
+              key={tabs.id}
+              className="sideTaskViewContainer_miniView">
               <p>{tabs.tab}</p>
             </div>
           ))}
@@ -82,7 +86,9 @@ const SideTaskView = ({ activeComponent }) => {
               : "sideTaskViewContainer_menu closeTaskView"
           }>
           {traceTaskView.map((tabs) => (
-            <div className="sideTaskViewContainer_miniView">
+            <div
+              key={tabs.id}
+              className="sideTaskViewContainer_miniView">
               <p>{tabs.tab}</p>
             </div>
           ))}

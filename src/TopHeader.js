@@ -92,7 +92,8 @@ const TopHeader = ({ activeComponent }) => {
         activeComponent !== "data" &&
         activeComponent !== "bill" &&
         activeComponent !== "equip" &&
-        activeComponent !== "drivers" && (
+        activeComponent !== "drivers" &&
+        activeComponent !== "test" && (
           <SideTaskView activeComponent={activeComponent} />
         )}
     </div>

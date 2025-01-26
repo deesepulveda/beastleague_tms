@@ -9,7 +9,7 @@ const Appointments = ({ activeComponent }) => {
 
   const fetchApptDispatchData = async () => {
     const { data, error } = await supabase
-      .from("dispatch")
+      .from("dispatches")
       .select("*");
 
     if (error) console.log("Error, No Data!");
@@ -19,7 +19,7 @@ const Appointments = ({ activeComponent }) => {
 
       setApptShowData(
         data.filter((datas) => {
-          return datas.appointment_date === null;
+          return datas.appt_date === null;
         })
       );
 

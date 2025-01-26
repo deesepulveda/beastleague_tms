@@ -71,6 +71,13 @@ const MainNav = ({ handleNavLinks, activeComponent }) => {
             }>
             drivers
           </li>
+          <li
+            onClick={() => handleNavLinks("test")}
+            className={
+              activeComponent === "test" ? "mainNav_activeLink" : ""
+            }>
+            test
+          </li>
         </ul>
       </nav>
       <div className="mainNav_searchBox">

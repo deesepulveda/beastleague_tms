@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { dispButtons } from "../../global/dataButtonsArrays";
-// import SortButtons from "../../global/SortButtons";
 import "../../global/SortButtons.css";
-// import SideTaskView from "../../global/SideTaskView";
 import supabase from "../../../config/supabaseClient";
-// import TopHeader from "../../../TopHeader";
 import DispatchTimeLine from "../../global/DispatchTimeLine";
 
 const Dispatch = ({ activeComponent }) => {
@@ -13,7 +9,7 @@ const Dispatch = ({ activeComponent }) => {
 
   const fetchDataDisp = async () => {
     const { data, error } = await supabase
-      .from("dispatch")
+      .from("dispatches")
       .select("*");
 
     if (error) console.log("Error! No Data");

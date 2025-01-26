@@ -1,6 +1,5 @@
 import React from "react";
 import "./Pages.css";
-// import "./dataDispatch/Dispatch";
 import Dashboard from "./pages/dashboard/Dashboard";
 import DataEntry from "./pages/entry/DataEntry";
 import Dispatch from "./pages/dispatch/Dispatch";
@@ -9,6 +8,7 @@ import Tracing from "./pages/tracing/Tracing";
 import Billing from "./pages/billing/Billing";
 import Equipment from "./pages/equipment/Equipment";
 import Drivers from "./pages/drivers/Drivers";
+import Testing from "./pages/Testing";
 
 const Pages = ({ activeComponent }) => {
   return (
@@ -36,6 +36,9 @@ const Pages = ({ activeComponent }) => {
       )}
       {activeComponent === "drivers" && (
         <Drivers activeComponent={activeComponent} />
+      )}
+      {activeComponent === "test" && (
+        <Testing activeComponent={activeComponent} />
       )}
     </div>
   );

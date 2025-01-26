@@ -1,0 +1,48 @@
+.testingContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testingContainer > .testing_form {
+  width: 100%;
+  height: calc(100vh / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testingContainer > .testing_form > input {
+  width: 35rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.testingContainer > .testing_data {
+  width: 100%;
+  height: calc(100vh / 2);
+  font-size: 1.6rem;
+  /* border: 1px solid yellow; */
+}
+
+.testingContainer > .testing_data > .test_data_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testingContainer > .testing_data > .test_data_info > li {
+  width: 23rem;
+  height: auto;
+  list-style-type: none;
+  text-align: start;
+  border: 1px solid red;
+}
+
+.testingContainer > .testing_data > .test_data_info > li > span {
+  color: yellow;
+}

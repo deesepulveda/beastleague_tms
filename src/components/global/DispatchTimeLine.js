@@ -38,16 +38,17 @@ const DispatchTimeLine = ({ data }) => {
             ? "dispatchTimeLineContainer_container nullStyling"
             : "dispatchTimeLineContainer_container"
         }>
-        cont: {data.container}
+        ctr: {data.container}
       </div>
       <div className="dispatchTimeLineContainer_chas">
-        chas: whiz424900 - 40w (wh)
+        whiz424900 - 40w (wh)
       </div>
       <div className="dispatchTimeLineContainer_customer">
-        cust: {data.customer.slice(0, 10)}
+        {data.customer.slice(0, 10)}
       </div>
+      <div className="dispatchTimeLineContainer_booking"></div>
       <div className="dispatchTimeLineContainer_location identifier customer_appt">
-        {data.location_name}
+        {data.location_name} - {data.location_city}
       </div>
       <div className="dispatchTimeLineContainer_date customer_appt">
         {data.appt_date !== null && data.appt_date.slice(5, 10)}
@@ -57,10 +58,22 @@ const DispatchTimeLine = ({ data }) => {
       </div>
       <div className="dispatchTimeLineContainer_status">
         <span>{data.move_type !== "ex-export" ? "fcl" : "ecl"}</span>
-        in transit to customer
+        {data.move_type === "mt-empty repo" ||
+        data.move_type === "xt-crosstown"
+          ? "in transit to rail"
+          : "in transit to cust"}
       </div>
       <div className="dispatchTimeLineContainer_currentDriver">
-        cur drv: <span>janusz</span>
+        cur drv: <span>James</span>
+      </div>
+      <div
+        className={
+          data.bill_status !== null
+            ? "dispatchTimeLineContainer_billStatus  billedStyling "
+            : "dispatchTimeLineContainer_billStatus identifier"
+        }>
+        billed:
+        <span>{data.bill_status !== null ? "yes" : "no"}</span>
       </div>
       <div className="dispatchTimeLineContainer_expand">🍪</div>
     </div>

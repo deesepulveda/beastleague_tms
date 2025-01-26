@@ -17,11 +17,13 @@ const Dispatch = ({ activeComponent }) => {
     if (data) {
       console.log("There is Data!");
 
-      setShowDispData(
-        data.filter((datas) => {
-          return datas.appointment_date !== null;
-        })
-      );
+      setShowDispData(data);
+
+      // setShowDispData(
+      //   data.filter((datas) => {
+      //     return datas.appt_date !== null;
+      //   })
+      // );
 
       setIsDataLoading(false);
     }

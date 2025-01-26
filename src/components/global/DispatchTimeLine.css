@@ -16,6 +16,11 @@
   box-shadow: 0.2rem 0.2rem 0.3rem rgba(14, 14, 14, 0.628);
 }
 
+.dispatchTimeLineContainer:hover {
+  background-color: rgba(5, 82, 108, 0.674);
+  cursor: pointer;
+}
+
 .dispatchTimeLineContainer > div {
   height: 100%;
   margin: 0 0.25rem;
@@ -48,28 +53,29 @@
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_ssl_size {
-  width: 12rem;
+  width: 13rem;
+  padding-left: 0.5rem;
   justify-content: flex-start;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_container {
-  width: 17rem;
+  width: 16rem;
   padding-left: 0.5rem;
   justify-content: flex-start;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_chas {
-  width: 23rem;
+  width: 20rem;
   justify-content: flex-start;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_customer {
-  width: 14rem;
+  width: 12rem;
   justify-content: flex-start;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_location {
-  width: 34rem;
+  width: 32rem;
   padding-left: 1rem;
   justify-content: flex-start;
   font-weight: 600;
@@ -86,7 +92,7 @@
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_status {
-  width: 23rem;
+  width: 18rem;
   padding-left: 0.15rem;
   justify-content: flex-start;
 }
@@ -99,10 +105,26 @@
 }
 
 .dispatchTimeLineContainer
+  > .dispatchTimeLineContainer_currentDriver {
+  width: 13rem;
+}
+
+.dispatchTimeLineContainer
   > .dispatchTimeLineContainer_currentDriver
   > span {
   margin-left: 0.5rem;
   color: yellow;
+}
+
+.dispatchTimeLineContainer > .dispatchTimeLineContainer_billStatus {
+  width: 10rem;
+  margin-left: 0.5rem;
+}
+
+.dispatchTimeLineContainer
+  > .dispatchTimeLineContainer_billStatus
+  > span {
+  margin-left: 0.5rem;
 }
 
 .dispatchTimeLineContainer > .dispatchTimeLineContainer_expand {
@@ -150,4 +172,11 @@
 
 .nulliedData {
   display: none;
+}
+
+.billedStyling {
+  color: #000;
+  font-weight: 600;
+  background-color: rgb(137, 229, 9);
+  border: none;
 }

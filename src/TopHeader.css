@@ -8,3 +8,9 @@
   z-index: 50;
   /* border: 1px dotted rgb(0, 136, 255); */
 }
+
+.length_box {
+  width: 15rem;
+  height: 100%;
+  border: 1px solid red;
+}

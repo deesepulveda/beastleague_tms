@@ -6,12 +6,13 @@ import SortButtons from "./components/global/SortButtons";
 import "./components/global/SortButtons.css";
 
 const dispButtons = [
-  { id: 1, tab: "today", hovered: true },
-  { id: 2, tab: "imports", hovered: false },
-  { id: 3, tab: "exports", hovered: false },
-  { id: 4, tab: "yards", hovered: false },
-  { id: 5, tab: "rails", hovered: false },
-  { id: 6, tab: "drops", hovered: false },
+  { id: 1, tab: "all", hovered: true },
+  { id: 2, tab: "today", hovered: false },
+  { id: 3, tab: "imports", hovered: false },
+  { id: 4, tab: "exports", hovered: false },
+  { id: 5, tab: "yards", hovered: false },
+  { id: 6, tab: "rails", hovered: false },
+  { id: 7, tab: "drops", hovered: false },
 ];
 
 const apptButtons = [
